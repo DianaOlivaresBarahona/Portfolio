@@ -1,0 +1,134 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>DBO</title>
+    <link rel="stylesheet" href="Portfolio.css" />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Fleur+De+Leah&display=swap"
+      rel="stylesheet"
+    />
+  </head>
+  <body>
+    <header class="navBar">
+      <a href="Portfolio.html" class="logo">DBO</a>
+      <input class="side-menu" type="checkbox" id="side-menu" />
+      <label class="hamb" for="side-menu"
+        ><span class="hamb-line"></span
+      ></label>
+      <nav class="nav">
+        <ul class="menu">
+          <li><a href="aboutMe.html">About me</a></li>
+          <li><a href="#">Projects</a></li>
+          <li><a href="contactMe.html">Contact Me</a></li>
+        </ul>
+      </nav>
+    </header>
+
+    <main>
+      <section class="box4">
+        <article class="contactMe">
+          <h1>Contact me</h1>
+          <p>
+            If you have any questions or comments, please contact me via email
+            or phone, or send me a message using the contact form.
+          </p>
+          <div class="p1"><p>Email/Phonenumber:</p></div>
+          <div class="p2">
+            <p>Olivaresbarahona@live.se</p>
+            <p>+46 73 5742041</p>
+          </div>
+        </article>
+
+        <form action="contactMe.html" method="get" class="form">
+          <div class="personalInfo">
+            <div class="nameContainer">
+              <label for="fname">Firstname (required)</label>
+              <input required type="text" class="input" name="fname" />
+            </div>
+
+            <div class="nameContainer">
+              <label for="lname">Lastname (required)</label>
+              <input required type="text" class="input" name="lname" />
+            </div>
+          </div>
+
+          <div class="emailContainer">
+            <div class="mailContainer">
+              <label for="Email">Email (required)</label>
+              <input required type="text" class="input" name="mailContainer" />
+            </div>
+          </div>
+
+          <div class="countrySelector">
+            <div class="cSelector">
+              <label for="Country">Country</label>
+              <select class="input" id="Country">
+                <option value="Sweden">Sweden</option>
+                <option value="Norway">Norway</option>
+                <option value="Germany">Germany</option>
+                <option value="Denmark">Denmark</option>
+                <option value="France">France</option>
+                <option value="Belgium">Belgium</option>
+                <option value="Italy">Italy</option>
+                <option value="Austria">Austria</option>
+                <option value="Greece">Greece</option>
+                <option value="Hungary">Hungary</option>
+                <option value="Croatia">Croatia</option>
+                <option value="Finland">Finland</option>
+                <option value="Cyprus">Cyprus</option>
+                <option value="Netherlands">Netherlands</option>
+                <option value="Malta">Malta</option>
+                <option value="Island">Island</option>
+                <option value="Portugal">Portugal</option>
+                <option value="Spain">Spain</option>
+                <option value="Albania">Albania</option>
+                <option value="Poland">Poland</option>
+                <option value="Ukraine">Ukraine</option>
+              </select>
+            </div>
+
+            <div class="pNumber">
+              <label for="phoneNumber">Number</label>
+              <input
+                required
+                type="phoneNumber"
+                class="input"
+                name="phoneNumber"
+              />
+            </div>
+          </div>
+
+          <div class="subjectContainer">
+            <div class="subContainer">
+              <label for="Subject">Subject (required)</label>
+              <input required type="Subject" class="input" name="Subject" />
+            </div>
+          </div>
+
+          <div class="messageContainer">
+            <div class="messContainer">
+              <label for="message">Message (required)</label>
+              <textarea
+                required
+                class="message"
+                name="message"
+                type="message"
+                rows="6"
+                cols="50"
+              ></textarea>
+            </div>
+          </div>
+        </form>
+      </section>
+    </main>
+    <div class="buttonContainer">
+      <div class="center">
+        <button class="submit" type="submit" form="form" value="submit">
+          Submit
+        </button>
+      </div>
+    </div>
+  </body>
+</html>
